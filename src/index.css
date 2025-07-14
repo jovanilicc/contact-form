@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: hsl(169, 82%, 27%);
+  --color-primary-red: hsl(0, 66%, 54%);
+
+  --color-secondary-green: hsl(148, 38%, 91%);
+
+  --color-secondary-grey-500: hsl(186, 15%, 59%);
+  --color-secondary-grey-900: hsl(187, 24%, 22%);
+
+  --animate-fade-in: fade-in 1s ease;
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      top: 0;
+    }
+    to {
+      top: 20px;
+      opacity: 1;
+    }
+  }
+}
+body {
+  font-family: "Karla", sans-serif;
+  background: hsl(148, 38%, 91%);
+}
+input[type="radio"],
+input[type="checkbox"],
+label {
+  cursor: pointer;
+}
+input {
+  font-weight: 600;
+  color: hsl(187, 24%, 22%);
+}
+textarea {
+  font-weight: 600;
+  color: hsl(187, 24%, 22%);
+}
