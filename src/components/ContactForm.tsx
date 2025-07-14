@@ -39,7 +39,7 @@ const ContactForm = ({ title }: ContactFormProps) => {
 
   console.log(userConsentCheck);
   const handleSubmit = async (
-    prevState: null | { success: boolean },
+    _prevState: null | { success: boolean },
     formData: FormData
   ) => {
     const raw = Object.fromEntries(formData);
